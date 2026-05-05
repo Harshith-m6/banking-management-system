@@ -82,3 +82,11 @@ src/main/resources/
 ├── templates/
 ├── application.properties
 └── data.sql
+
+
+## 📸 Screenshots
+
+![Login](screenshots/login.png)
+![Dashboard](screenshots/dashboard.png)
+![Account](screenshots/account.png)
+![View](screenshots/view.png)
