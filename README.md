@@ -1,12 +1,12 @@
-# 🏦 Banking Management System
+#  Banking Management System
 
-## 📌 Project Overview
+##  Project Overview
 The Banking Management System is a full-stack web application developed using **Spring Boot, Hibernate (JPA), and MySQL**.  
 It allows users to securely log in and manage bank account details such as creating, updating, viewing, and deleting records.
 
 ---
 
-## 🚀 Features
+##  Features
 - User Login Authentication  
 - Create Account  
 - Modify Account  
@@ -16,7 +16,7 @@ It allows users to securely log in and manage bank account details such as creat
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - Java (Core + OOP)  
 - Spring Boot  
 - Hibernate (JPA)  
@@ -25,7 +25,7 @@ It allows users to securely log in and manage bank account details such as creat
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Create Database
 Open MySQL and run:
@@ -62,14 +62,14 @@ mvn spring-boot:run
 Open browser:
 
 http://localhost:8080
-🔐 Default Login Credentials
+ Default Login Credentials
 Username: admin  
 Password: admin123
 
 If not present, insert manually:
 
 INSERT INTO users (username, password) VALUES ('admin', 'admin123');
-📁 Project Structure
+ Project Structure
 src/main/java/com/example/bankapp/
 │
 ├── controller/
@@ -84,16 +84,16 @@ src/main/resources/
 └── data.sql
 
 
-## 📸 Screenshots
+##  Screenshots
 
-### 🔐 Login Page
+###  Login Page
 ![Login](Login%20Page.png)
 
-### 🏠 Dashboard
+###  Dashboard
 ![Dashboard](Dashboard.png)
 
-### 📊 Account Detail Page
+###  Account Detail Page
 ![Account](Account%20Detail%20page.png)
 
-### 📊 Accounts View Page
+###  Accounts View Page
 ![View](Accounts%20View%20Page.png)
