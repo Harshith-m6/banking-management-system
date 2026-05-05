@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+}
+
+form {
+    width: 420px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79,172,254,0.5);
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #45a049;
+}
+
+button[type="reset"] {
+    background: #f44336;
+    color: white;
+    float: right;
+}
+
+button[type="reset"]:hover {
+    background: #d73833;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Create / Modify Account</h2>
+
+<form action="/dashboard/save" method="post">
+
+    <!-- 🔴 IMPORTANT: THIS FIXES UPDATE -->
+    <input type="hidden" name="accountNumber" th:value="${account.accountNumber}">
+
+    <select name="accountType">
+        <option value="Savings" th:selected="${account.accountType == 'Savings'}">Savings</option>
+        <option value="Current" th:selected="${account.accountType == 'Current'}">Current</option>
+    </select>
+
+    <input type="text" name="firstName" th:value="${account.firstName}" placeholder="First Name" required>
+    <input type="text" name="middleName" th:value="${account.middleName}" placeholder="Middle Name">
+    <input type="text" name="lastName" th:value="${account.lastName}" placeholder="Last Name" required>
+
+    <input type="date" name="dob" th:value="${account.dob}">
+
+    <select name="gender">
+        <option value="Male" th:selected="${account.gender == 'Male'}">Male</option>
+        <option value="Female" th:selected="${account.gender == 'Female'}">Female</option>
+    </select>
+
+    <input type="text" name="panNumber" th:value="${account.panNumber}" placeholder="PAN">
+    <input type="text" name="currentAddress" th:value="${account.currentAddress}" placeholder="Current Address">
+    <input type="text" name="permanentAddress" th:value="${account.permanentAddress}" placeholder="Permanent Address">
+    <input type="text" name="mobile" th:value="${account.mobile}" placeholder="Mobile">
+
+    <button type="submit">Save</button>
+    <button type="reset">Clear</button>
+
+</form>
+
+</body>
+</html>

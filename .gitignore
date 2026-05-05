@@ -1,0 +1,15 @@
+target/
+bin/
+*.log
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Maven
+.m2/
+
+# IDE
+.vscode/
+.p2/
