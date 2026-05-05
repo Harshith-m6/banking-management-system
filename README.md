@@ -86,7 +86,14 @@ src/main/resources/
 
 ## 📸 Screenshots
 
-![Login](screenshots/login.png)
-![Dashboard](screenshots/dashboard.png)
-![Account](screenshots/account.png)
-![View](screenshots/view.png)
+### 🔐 Login Page
+![Login](Login%20Page.png)
+
+### 🏠 Dashboard
+![Dashboard](Dashboard.png)
+
+### 📊 Account Detail Page
+![Account](Account%20Detail%20page.png)
+
+### 📊 Accounts View Page
+![View](Accounts%20View%20Page.png)
